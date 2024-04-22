@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  h1 {
+    color: #ff5733;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 50% 0;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .image-gallery img:hover {
+    transform: scale(2.2);
+  }
+
+/* for ballon */
+
+@keyframes balloon {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+  }
+  
+  .balloon {
+    animation: balloon 3s infinite;
+  }
+  
+
+
+
+/* peom page */
+
+.poem{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(240, 238, 236, 0.007);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+
+  /* for the heart */
+  .heart {
+    position:absolute;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    clip-path: polygon(
+      50% 15%, 80% 0,
+      100% 20%, 100% 50%,
+      50% 95%, 0 50%,
+      0 20%, 20% 0
+    );
+    animation: heartBeat 0.9s ease infinite;
+  }
+
+  @keyframes heartBeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    } 
+   }
+   
+   div.heart{
+    margin:50px 0 0 140px;
+   }
+
+  /* button style */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733; /* Orange background color */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add some spacing between buttons */
+  }
+
+  .button:hover {
+    background-color: #ff8c66; /* Lighter shade of orange on hover */
+  }
+  .navi{
+    text-align: center;
+  }
+
+
+
+
+  /* flower page  */
+
+
+  #flower {
+    margin:0;
+    background: rgb(234, 223, 153);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   svg.rose {
+     display: block;
+     width:600px;
+     padding-top: 10em;
+     margin-top: -100px;
+   }
+   
+   .blossom {
+    
+    color: #ff5733; /* Color del texto */
+    font-size: 36px;
+    margin-top: 100px;
+
+
+      }
+   
+   @keyframes rose-animation {
+     50% {
+       transform: scale(1);
+       opacity: 1;
+     }
+     100%{
+          transform: scale(1);
+       opacity: 1;
+     }
+   }
+   
+   .cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.1s alternate;
+   }
+   .cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.34s alternate;
+   }
+   .cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.5s alternate;
+   }
+   cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17{
+     transform: scale(0);
+     transform-origin: center center;
+     opacity: 0;
+      animation: rose-animation 2s ease infinite 0.2s alternate;
+   }
+   .boingInUp {
+     -webkit-animation-name: boingInUp;
+             animation-name: boingInUp;
+   }
+   @-webkit-keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   #hojas{
+     animation: boingInUp 2s ease infinite alternate  ;
+   }
+   @keyframes boingInUp {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(-90deg);
+               transform: perspective(800px) rotateX(-90deg);
+     }
+     
+     50% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(50deg);
+               transform: perspective(800px) rotateX(50deg);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 0%;
+               transform-origin: 50% 0%;
+       -webkit-transform: perspective(800px) rotateX(0deg);
+               transform: perspective(800px) rotateX(0deg);
+     }
+   }
+   .puffIn {
+     -webkit-animation-name: puffIn;
+             animation-name: puffIn;
+   }
+   @-webkit-keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   @keyframes puffIn {
+     0% {
+       opacity: 0;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(2,2);
+               transform: scale(2,2);
+       -webkit-filter: blur(2px);
+               filter: blur(2px);
+     }
+     50%{
+       opacity: 0.3;
+     }
+   
+     100% {
+       opacity: 1;
+       -webkit-transform-origin: 50% 50%;
+               transform-origin: 50% 50%;
+       -webkit-transform: scale(1,1);
+               transform: scale(1,1);
+       -webkit-filter: blur(0px);
+               filter: blur(0px);
+     }
+   }
+   #tallos{
+     animation: puffIn 2s infinite ease alternate;
+   }
+   #sombra_1{
+     visibility:hidden;
+   }
