@@ -29,6 +29,7 @@ body {
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
 
   }
   .image-gallery img:hover {
