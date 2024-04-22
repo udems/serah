@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     background-color: #f0f0f0;
   }
@@ -29,11 +29,18 @@ body {
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+
   }
   .image-gallery img:hover {
     transform: scale(2.2);
   }
 
+  @media only screen and (max-width:980px) {
+    .image-gallery img:hover {
+      transform: none;
+    }
+ 
+  }
 /* for ballon */
 
 @keyframes balloon {
@@ -90,7 +97,7 @@ body {
       transform: scale(1);
     } 
    }
-   
+
    div.heart{
     margin:50px 0 0 140px;
    }
